@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>{{ .Title }} — {{ .Site.Title }}</title>
-  {{ partial "downloader-head.html" . }}
-  {{ if eq .Layout "qrpage" }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  <link rel="stylesheet" href="{{ "css/qr.css" | relURL }}">
-  {{ end }}
+  {{ partial "downloads-head.html" . }}
   {{ block "head" . }}{{ end }}
 </head>
 <body>

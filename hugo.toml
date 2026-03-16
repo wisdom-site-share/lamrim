@@ -1,6 +1,8 @@
 baseURL = 'https://daocidi-site-share.github.io/lamrim/'
 languageCode = 'zh-CN'
-title = 'My New Hugo Site'
+title = 'Daocidi Share Site'
+
+enableGitInfo  = true
 
 [caches]
   [caches.images]
