@@ -1,0 +1,16 @@
+{{/* 仅 layout = "dlpage" 时注入资源，避免影响其他页面
+     脚本加载顺序（必须）：
+       1. dlpage-i18n.js   定义 window.DLI18n
+       2. dlpage.js        使用 DLI18n，暴露 window.__dlInit
+       3. dlpage-parser.js 解析 Markdown HTML，调用 __dlInit       */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+{{ if eq .Layout "dlpage" }}
+<link rel="stylesheet" href="{{ "css/dlpage.css" | relURL }}">
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="{{ "js/dlpage-i18n.js"  | relURL }}" defer></script>
+<script src="{{ "js/dlpage.js"        | relURL }}" defer></script>
+<script src="{{ "js/dlpage-parser.js" | relURL }}" defer></script>
+{{ else if eq .Layout "qrpage" }}
+<link rel="stylesheet" href="{{ "css/qr.css" | relURL }}">
+{{ end }}

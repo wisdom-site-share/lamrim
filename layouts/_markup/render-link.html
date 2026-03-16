@@ -1,0 +1,3 @@
+<a href="{{ .Destination | safeURL }}" {{ if .Title }} title="{{ .Title }}"{{ end }} {{ if .Attributes }} {{ range $key, $value := .Attributes }} {{ $key }}="{{ $value }}" {{ end }} {{ end }}>
+  {{ .Text }}
+</a>

@@ -1,0 +1,3 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}" class="title is-{{ add .Level 2 }}">
+  <a href="#{{ .Anchor | safeURL }}">{{ .Text }}</a>
+</h{{ .Level }}>
