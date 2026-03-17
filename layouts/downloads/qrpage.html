@@ -30,7 +30,7 @@
 </section>
 
 {{/* 按 <hr> 切分内容，每段包成一张卡片 */}}
-{{ $sections := .Content | split "<hr>" }}
+{{ $sections := split .Content  "<hr>" }}
 
 <section class="section">
   <div class="container">

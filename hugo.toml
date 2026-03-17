@@ -2,7 +2,10 @@ baseURL = 'https://daocidi-site-share.github.io/lamrim/'
 languageCode = 'zh-CN'
 title = 'Daocidi Share Site'
 
-enableGitInfo  = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [caches]
   [caches.images]
