@@ -1,4 +1,4 @@
-baseURL = 'https://wisdom-site-share.github.io/lamrim/'
+baseURL = 'https://lamrim.wisdom-site-share.workers.dev/'
 languageCode = 'zh-CN'
 title = 'Wisdom Share Site'
 
