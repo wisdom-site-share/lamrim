@@ -1,6 +1,6 @@
-baseURL = 'https://wisdom-site-share.github.io/lamrim/'
+baseURL = 'https://wisdomshare.dpdns.org'
 languageCode = 'zh-CN'
-title = 'Daocidi Share Site'
+title = 'Wisdom Share Site'
 
 [markup]
   [markup.goldmark]
